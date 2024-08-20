@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.video-player {
+    position: relative;
+    max-width: 80%;
+    background: #000;
+}
+
+video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.controls {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button, input[type="range"] {
+    background: #fff;
+    border: none;
+    margin: 0 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+input[type="range"] {
+    width: 100px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ddd;
+}
+
+button:focus, input[type="range"]:focus {
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    background: #00796b;
+    border-radius: 50%;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: #ddd;
+    height: 5px;
+    border-radius: 5px;
+}
